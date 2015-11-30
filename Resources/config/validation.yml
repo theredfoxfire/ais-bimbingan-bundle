@@ -1,0 +1,9 @@
+# src/Ais/BimbinganBundle/Resources/config/validation.yml
+Ais\BimbinganBundle\Entity\Bimbingan:
+    properties:
+        tindakan:
+            - NotBlank: ~
+            - NotNull: ~
+            - Length:
+                min: 2
+                minMessage: "Your title must be at least {{ limit }} characters length"

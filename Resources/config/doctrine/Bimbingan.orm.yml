@@ -1,0 +1,39 @@
+Ais\BimbinganBundle\Entity\Bimbingan:
+ type: entity
+ table: bimbingan
+ id:
+  id: 
+   type: integer
+   generator: { strategy: AUTO }
+ fields:
+  mahasiswa_id:
+   type: integer
+  prodi:
+   type: string
+  semester:
+   type: string
+   length: 30
+  angkatan:
+   type: string
+   length: 15
+  deskripsi:
+   type: text
+   nullable: true
+  tindakan:
+   type: text
+   nullable: true
+  keterangan:
+   type: text
+   nullable: true
+  tema:
+   type: string
+   nullable: true
+  tanggal:
+   type: date
+   nullable: true
+  is_active:
+   type: boolean
+   nullable: true
+  is_delete:
+   type: boolean
+   nullable: true

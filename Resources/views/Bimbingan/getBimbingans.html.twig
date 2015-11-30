@@ -1,0 +1,18 @@
+{% block content %}
+    <h1 class="title">{{ 'bimbingan.list'|trans({}, 'AisBimbinganBundle') }}</h1>
+
+    <ul id="bimbingan-list">
+        {% for bimbingan in bimbingans %}
+            <li>
+                <a href="{{ path('api_1_get_bimbingan', {'id': bimbingan.id}) }}">{{ bimbingan.nama }}</a>
+                {#[<a href="{{ path('api_1_edit_bimbingans', {'id': bimbingan.id}) }}">{{ 'bimbingan.edit.link'|trans({}, 'AisBimbinganBundle') }}</a>]#}
+                {#[<a href="{{ path('api_1_remove_bimbingans', {'id': bimbingan.id}) }}">{{ 'bimbingan.remove.link'|trans({}, 'AisBimbinganBundle') }}</a>]#}
+            </li>
+        {% else %}
+            <li>{{ 'bimbingan.list.empty'|trans({}, 'AisBimbinganBundle') }}</li>
+        {% endfor %}
+    </ul>
+    <p>
+        <a href="{{ path('api_1_new_bimbingan') }}">{{ 'bimbingan.new.link'|trans({}, 'AisBimbinganBundle') }}</a>
+    </p>
+{% endblock %}

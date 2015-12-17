@@ -1,6 +1,7 @@
 Ais\BimbinganBundle\Entity\Bimbingan:
  type: entity
  table: bimbingan
+ repositoryClass: Ais\BimbinganBundle\Repository\BimbinganRepository
  id:
   id: 
    type: integer

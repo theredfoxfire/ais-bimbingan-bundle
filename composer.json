@@ -1,5 +1,5 @@
 {
-    "name" : "Ais/BimbinganBundle",
+    "name" : "ais/bimbinganbundle",
     "description" : "A bundle filled with Bimbingan",
     "type" : "symfony-bundle",
     "authors" : [{

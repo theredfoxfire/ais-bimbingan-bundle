@@ -22,8 +22,8 @@
 		</service>
         
         <service id="ais_bimbingan.bimbingan.repository" 
-			class="Ais\UserBundle\Repository\BimbinganRepository"
-			factory-service="ais_user.bimbingan.manager" factory-method="getRepository">
+			class="Ais\BimbinganBundle\Repository\BimbinganRepository"
+			factory-service="ais_bimbingan.bimbingan.manager" factory-method="getRepository">
 				<argument>%ais_bimbingan.bimbingan.class%</argument>
 		</service>
     </services>
